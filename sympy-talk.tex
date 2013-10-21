@@ -1,0 +1,89 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+
+\title{SymPy}
+\author{Sean Vig}
+\date{March 15, 2013}
+\titlegraphic{\includegraphics[height=.5\textheight]{sympy-logo}}
+
+\begin{document}
+
+\maketitle
+\begin{frame}
+  \frametitle{SymPy modules}
+  \begin{columns}[l]
+    \column{.5\textwidth}
+    \begin{itemize}
+      \item Category theory
+      \item Combinatorics (group theory)
+      \item Differential geometry
+      \item Functions
+      \item Geometric algebra
+      \item Geometry
+      \item Integration
+      \item Logic
+    \end{itemize}
+    \column{.5\textwidth}
+    \begin{itemize}
+      \item Matrices
+      \item Number Theory
+      \item Physics
+      \item Plotting
+      \item Polynomials
+      \item Solvers
+      \item Statistics
+      \item Tensors
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Installing SymPy}
+  From source (https://code.google.com/p/sympy/downloads/list)
+  \begin{exampleblock}{}
+    \begin{verbatim}$ python setup.py install\end{verbatim}
+  \end{exampleblock}
+  Python 3
+  \begin{exampleblock}{}
+    \begin{verbatim}$ ./bin/use2to3
+$ cd py3k-sympy
+$ python setup.py install\end{verbatim}
+  \end{exampleblock}
+  Pip
+  \begin{exampleblock}{}
+    \begin{verbatim}$ pip install sympy\end{verbatim}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Running SymPy}
+  Python Session
+  \begin{exampleblock}{}
+    \begin{verbatim}>>> from sympy import *\end{verbatim}
+  \end{exampleblock}
+  Interactive session
+  \begin{exampleblock}{}
+    \begin{verbatim}$ ./bin/isympy\end{verbatim}
+  \end{exampleblock}
+  Interactive IPython
+  \begin{exampleblock}{}
+    \begin{verbatim}$ ipython --profile=sympy\end{verbatim}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Dependencies}
+  None! (other than Python) \\
+  $\geq2.5$ including 3.2 (3.3?)\\[.3in]
+
+  But can be integrated with:
+  \begin{itemize}
+    \item IPython
+    \item gmpy
+    \item NumPy
+    \item SciPy
+    \item pyglet/matplotlib
+  \end{itemize}
+\end{frame}
+
+\end{document}

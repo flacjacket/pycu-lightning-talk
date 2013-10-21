@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{fullpage}
+\begin{document}
+
+\LARGE
+
+\noindent
+http://sympy.org \\
+http://live.sympy.org \\
+http://gamma.sympy.org \\
+
+\begin{verbatim}
+from sympy import *
+x, y = symbols('x y')
+limit(sin(x)/x, x, 0)
+(1/cos(x)).series(x, 0, 10)
+diff(sin(x), x)
+integrate(exp(-x**2), x)
+Integrate(sin(x),x)
+_.doit()
+integrate(1/log(x), x)
+// big polynomial
+gcd(f, g)
+factor(expand(f*g))
+f(x).diff(x, x) + f(x)
+dsolve(_, f(x))
+groebner([x**2 - 2*y**2, x*y - 3], x, y)
+\end{verbatim}
+
+\end{document}
